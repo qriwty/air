@@ -1,0 +1,21 @@
+<div class="d-flex justify-content-between">
+  <h2>Air Alerts List</h2>
+</div>
+<div class="mt-4 table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Region</th>
+        <th scope="col">Status</th>
+        <th scope="col">Since</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let region of regions">
+        <td>{{ region.name }}</td>
+        <td>{{ region.alert }}</td>
+        <td>{{ region.changed }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
